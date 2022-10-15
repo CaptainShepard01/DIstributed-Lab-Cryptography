@@ -27,10 +27,10 @@ func SolveSecondEquation(a, b, m int) (int, error) {
 
 	for i := len(runes) - 1; i >= 0; i-- {
 		if runes[i] == '1' {
-			d = (d * t) % m
+			d, _ = SolveFirstEquation(d*t, m)
 		}
 
-		t = (t * t) % m
+		t, _ = SolveFirstEquation(t*t, m)
 		if t == 1 {
 			break
 		}
