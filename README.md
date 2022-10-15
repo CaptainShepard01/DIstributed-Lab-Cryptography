@@ -1,1 +1,1 @@
-# DIstributed-Lab-Cryptography
+# Distributed-Lab-Cryptography
